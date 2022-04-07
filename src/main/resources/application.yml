@@ -1,0 +1,28 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/registration
+    username: mkuz
+    password: pass
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+  mail:
+    host: smtp.mail.ru
+    port: 465
+    username: username
+    password: password
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+          auth: true
+          enable: true
+mail:
+  debug: true
